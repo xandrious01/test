@@ -1,0 +1,107 @@
+body {
+  background-color: rgb(35, 63, 155);
+}
+
+#game {
+  border: none;
+  margin: 10px;
+  width: 100%;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+div {
+  display: inline-block;
+  margin: 10px;
+}
+
+button {
+color: black;
+border: 3px black solid;
+border-radius: 10px;
+box-shadow: -3px 3px 0px darkslategrey;
+padding: 5px;
+width: 80px;
+margin-inline: 5%;
+font-size: 16px;
+font-family: serif;
+font-weight: 700;
+}
+
+#practice {
+background-color: rgb(24, 198, 24);
+}
+
+#easy {
+background-color: rgb(255, 255, 8);
+
+}
+
+#hard {
+background-color: rgb(233, 124, 0);
+}
+
+#pro {
+background-color: red;
+}
+
+#button-div {
+  width: 80%;
+  margin: 50px;
+}
+
+button:active {
+  box-shadow: -1px 1px 0px;
+  transition-duration: 10ms;
+}
+
+label {
+  margin: 10px;
+  width: 100px;
+  height: 160px;
+  box-sizing: content-box;
+}
+
+.flip-card {
+  margin: none;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  perspective: 1200px; 
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.check:checked + label .flip-card-inner{
+transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  margin: auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #ffffff;
+}
+
+
+.flip-card-back {
+  background-color: white;
+  transform: rotateY(180deg);
+}
+
+input[type=checkbox] {
+  display: none;
+}
